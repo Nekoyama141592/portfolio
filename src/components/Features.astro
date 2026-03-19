@@ -1,0 +1,167 @@
+---
+---
+
+<section id="features">
+	<div class="container">
+		<div class="section-header">
+			<span class="section-label">Features</span>
+			<h2>ShareAIの<span class="gradient-text">主な機能</span></h2>
+			<p class="section-description">
+				AIプロンプトの共有からカスタムAIキャラクターとのチャットまで、
+				ShareAIであなたのAI体験を広げましょう。
+			</p>
+		</div>
+
+		<div class="features-grid">
+			<div class="feature-card glass-card">
+				<div class="feature-icon">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+					</svg>
+				</div>
+				<h3>AIチャット</h3>
+				<p>カスタムAIキャラクターを作成し、ユニークな個性を持つAIとリアルタイムで会話を楽しめます。</p>
+				<div class="feature-tag">Chat</div>
+			</div>
+
+			<div class="feature-card glass-card">
+				<div class="feature-icon">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+						<path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+					</svg>
+				</div>
+				<h3>プロンプト共有</h3>
+				<p>あなたのお気に入りのAIプロンプトをコミュニティに投稿し、他のユーザーのプロンプトも見つけられます。</p>
+				<div class="feature-tag">Share</div>
+			</div>
+
+			<div class="feature-card glass-card">
+				<div class="feature-icon">
+					<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+						<circle cx="9" cy="7" r="4"/>
+						<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+						<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+					</svg>
+				</div>
+				<h3>ユーザーランキング</h3>
+				<p>フォロワー数やいいね数で人気のクリエイターを発見。新しいAIプロンプトのインスピレーションを得ましょう。</p>
+				<div class="feature-tag">Ranking</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	#features {
+		padding: var(--section-padding);
+		position: relative;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 64px;
+	}
+
+	.section-label {
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: var(--color-accent-green);
+		background: rgba(74, 222, 128, 0.08);
+		border: 1px solid rgba(74, 222, 128, 0.15);
+		padding: 6px 16px;
+		border-radius: 50px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: clamp(1.8rem, 4vw, 2.8rem);
+		font-weight: 800;
+		margin-bottom: 16px;
+		letter-spacing: -0.02em;
+	}
+
+	.section-description {
+		font-size: 1.05rem;
+		color: var(--color-text-secondary);
+		max-width: 560px;
+		margin: 0 auto;
+		line-height: 1.8;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 28px;
+	}
+
+	.feature-card {
+		padding: 36px 28px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.feature-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, transparent, var(--color-accent-green), transparent);
+		opacity: 0;
+		transition: opacity var(--transition-medium);
+	}
+
+	.feature-card:hover::before {
+		opacity: 1;
+	}
+
+	.feature-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 56px;
+		height: 56px;
+		border-radius: 16px;
+		background: rgba(74, 222, 128, 0.1);
+		color: var(--color-accent-green);
+		margin-bottom: 20px;
+	}
+
+	.feature-card h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin-bottom: 12px;
+	}
+
+	.feature-card p {
+		font-size: 0.95rem;
+		color: var(--color-text-secondary);
+		line-height: 1.7;
+		margin-bottom: 20px;
+	}
+
+	.feature-tag {
+		display: inline-block;
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: var(--color-accent-emerald);
+		background: rgba(16, 185, 129, 0.08);
+		padding: 4px 12px;
+		border-radius: 6px;
+		letter-spacing: 0.05em;
+	}
+
+	@media screen and (max-width: 900px) {
+		.features-grid {
+			grid-template-columns: 1fr;
+			max-width: 480px;
+			margin: 0 auto;
+		}
+	}
+</style>
