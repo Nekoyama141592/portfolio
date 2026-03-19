@@ -45,3 +45,10 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 # portfolio
+
+## Lint
+
+```sh
+npm ci
+npm run build
+```
