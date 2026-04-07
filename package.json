@@ -1,17 +1,25 @@
 {
   "name": "red-remnant",
-  "type": "module",
   "version": "0.0.1",
-  "engines": {
-    "node": ">=22.12.0"
-  },
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "oxlint",
+    "format:check": "oxfmt --check .",
+    "check": "astro check"
   },
   "dependencies": {
     "astro": "^6.0.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.2",
+    "oxfmt": "latest",
+    "oxlint": "latest"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
